@@ -43,3 +43,15 @@ describe('sayHello', function(){
         expect(sayHello()).not.toBe(undefined);
     })
 });
+describe('isFive', function(){
+    it('5 should return true', function(){
+        expect(isFive(5)).toBe(true)
+    });
+    it('"5" should return true', function(){
+        expect(isFive("5")).toBe(true)
+    });
+    it('should return a boolean value of true or false', function(){
+        expect(isFive()).toBe(());
+    });
+
+});
