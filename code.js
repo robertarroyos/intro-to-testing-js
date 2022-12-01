@@ -14,3 +14,23 @@ function isFive(input) {
     }
     return input === 5 || input === '5';
 }
+
+function isEven(input){
+    if (input === false){
+        return false;
+    }
+    input = input % 2 === 0;
+    return input;
+}
+
+function isVowel(input){
+    if (typeof input !== 'string'){
+        return false;
+    }
+    input = input.toLowerCase();
+    if (input === 'a' || input === 'e' || input === 'i' || input === 'o' || input === 'u'){
+        return true;
+    } else {
+        return false;
+    }
+}
