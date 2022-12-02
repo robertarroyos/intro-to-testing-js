@@ -34,3 +34,8 @@ function isVowel(input){
         return false;
     }
 }
+
+function add(input1, input2){
+    let inputSum = parseInt(input1) + parseInt(input2);
+    return inputSum;
+}

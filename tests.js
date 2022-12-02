@@ -90,7 +90,7 @@ describe('isEven', function(){
     })
 })
 describe('isVowel', function(){
-    it('should be a defined funciton', function (){
+    it('should be a defined function', function (){
         expect(typeof isVowel).toBe('function');
     })
     it('should return true when executed with "a"', function () {
@@ -116,5 +116,31 @@ describe('isVowel', function(){
     })
     it('should return false when executed with an empty argument', function () {
         expect(isVowel()).toBe(false);
+    })
+})
+describe('add', function (){
+    it('should be a defined function', function (){
+        expect(typeof add).toBe('function');
+    })
+    it('it should return 5 when 2 and 3 are passed through the function', function () {
+        expect(add(2, 3)).toBe(5);
+    })
+    it('it should return -12 when -3 and -9 are passed through the function', function () {
+        expect(add(-3, -9)).toBe(-12);
+    })
+    it('it should return 11 when "5" and 6 are passed through the function', function () {
+        expect(add("5", 6)).toBe(11);
+    })
+    it('it should return 6 when "-4" and "10" are passed through the function', function () {
+        expect(add("-4", "10")).toBe(6);
+    })
+    it('it should return NaN when "banana" and "split" are passed through the function', function () {
+        expect(add("banana", "split")).toBeNaN();
+    })
+    it('it should return NaN when 2 and "apples" are passed through the function', function () {
+        expect(add(2, "apples")).toBeNaN();
+    })
+    it('it should return NaN when no argument is passed through the function', function () {
+        expect(add()).toBeNaN();
     })
 })
